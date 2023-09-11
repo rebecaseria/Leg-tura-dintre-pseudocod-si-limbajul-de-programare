@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card titlecard themed-card unselectable">
+        <div class="titlecard-title">Legatura dintre pseudocod si limbajul de programare C++</div>
+        <div class="titlecard-categories">
+            <div onclick="changePage('main')">Atestat</div>
+            <!--             <div onclick="changePage('solves-prog')">Probleme C++</div>
+            <div onclick="changePage('solves-db')">Probleme Baze de date</div> -->
+            <div onclick="changePage('team')">Rebeca Seria</div>
+        </div>
+    </div>
+    <div class="noborder page-container">
+        <div id="page-main" class="idpage noborder">
+            <div class="card" id="tbc">
+                <h1>Cuprins</h1>
+                <ol>
+                    <li><a href="#l1">Ce este pseudocodul?</a></li>
+                    <li><a href="#l2">Ce este limbajul de programare?</a></li>
+                    <li><a href="#l3">Pseudocod</a>
+                        <ol>
+                            <li><a href="#l4">Variabile si constante</a></li>
+                            <li><a href="#l5">Instructiuni</a></li>
+                            <!-- <li><a href="#l6">a</a></li> -->
+                            <li><a href="#l7">Citirea</a></li>
+                            <li><a href="#l8">Afisarea</a></li>
+                            <li><a href="#l9">Atribuirea</a></li>
+                            <li><a href="#l10">Structura alternativa</a></li>
+                            <li><a href="#l11">Structurii repetitive</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#l12">Limbajul de programare C++</a>
+                        <ol>
+                            <li><a href="#l13">Primul program C++</a></li>
+                            <li><a href="#l14">Comentarii</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#l15">Rezolvarea unei probleme</a></li>
+                </ol>
+            </div>
+            <div class="card content-card">
+                <h2 id="l1">Ce este pseudocodul?</h2>
+                <p>
+                    Pseudocodul este un limbaj prin care sunt explicati diferiti algoritmi. Fiecare instructiune din
+                    limbajele normale de programare (precum C++, Java, etc) poate fi descris pas cu pas in limbaj
+                    pseudocod. Rolul principal al pseudocodului este sa usureze citirea si intelegerea de catre oameni,
+                    deoarece pseudocodul propriu-zis nu poate fi rulat pe calculator.
+                </p>
+                <h2 id="l2">Ce este limbajul de programare?</h2>
+                <p>
+                    Limbajul de programare este un set de instrucțiuni foarte precise, scrise cu o anumită sintaxă
+                    astfel încât să implementeze un algoritm. Această modalitate de a scrie algoritmul este „limbajul
+                    comun” pe care îl folosesc programatorii și resursele software ale unui calculator pentru a trimite
+                    informații resurselor hardware ale acestuia. Instrucțiunile scrise în limbajul de programare sunt
+                    transformate de compilator în instrucțiuni scrise în limbaj mașină (limbajul pe care îl înțelege
+                    calculatorul) și apoi lansate în execuție.
+                </p>
+                <h2 id="l3">Pseudocod</h2>
+                <p>
+                    Sumarizat, pseudocod este un limbaj prin care sunt descriși pașii dintr-un algoritm. Limbajul
+                    pseudocod conține structurile specifice unui limbaj de programare obișnuit (precum Pascal, C/C++,
+                    Basic, etc) dar este destinat a fi citit de către oameni, nu de către calculatoare.
+                </p>
+                <p>
+                    De obicei sunt omise detaliile vitale într-un limbaj de programare, precum declararea variabilelor
+                    sau secvențe specifice limbajului. Algoritmii pseudocod pot conține secvențe descrise în limbaj
+                    natural, precum și expresii matematice compacte, care lipsesc din limbajele de programare reale.
+                </p>
+                <p>
+                    Conceptele care intervin in algoritmii pseudocod sunt similare cu cele din limbajele de programare:
+                <ul>
+                    <Li>instrucțiuni</Li>
+                    <li>variabile</Li>
+                    <li>constante</Li>
+                    <li>operații</Li>
+                    <li>expresii</Li>
+                </ul>
+                </p>
+                <h4 id="l4">Variabile si constante</h4>
+                <p>
+                    În pseudocod variabilele nu se declară, iar numele lor respectă regula uzuală a identificatorilor
+                    &dash; litere, cifre, caracterul de subliniere și să nu înceapă cu cifră.
+                </p>
+                <h4 id="l5">Instrucțiuni</h4>
+                <p>
+                    Instrucțiunile sunt componentele algoritmului care au efect, atunci când se execută. Ele modifică
+                    valorile unor variabile, citesc sau afișează date, repetă anumite acțiuni, etc.
+                </p>
+                <p>
+                    De regulă fiecare instrucțiune se scrie pe o linie (sau mai multe în cazul celor complexe), dar
+                    există situații când, pentru a economisi spațiu, două sau mai multe instrucțiuni simple se scriu pe
+                    același rând, separate prin <kbd>;</kbd>.
+                </p>
+                <p>
+                    Orice algoritm poate fi reprezentat prin intermediul a trei tipuri de structuri:
+                <ul>
+                    <li>structura liniară</li>
+                    <li>structura alternativă</li>
+                    <li>structura repetitivă
+                        <ul>
+                            <li>structura repetitivă cu număr necunoscut de pași
+                                <ul>
+                                    <li>structura repetitivă cu număr necunoscut de pași și test inițial</li>
+                                    <li>structura repetitivă cu număr necunoscut de pași și test final</li>
+                                </ul>
+                            </li>
+                            <li>structura repetitivă cu număr cunoscut de pași</li>
+                        </ul>
+                    </li>
+
+                </ul>
+                </p>
+                <h4 id="l7">Citirea</h4>
+                <p>
+                    Pentru citirea datelor se folosește instrucțiunea <code>citește &lt;listă variabile&gt;</code>, unde
+                    <code>&lt;listă variabile&gt;</code> reprezintă un șir de variabile separate prin caracterul
+                    <kbd>,</kbd>. Se preiau valori succesive de la tastatură și se memorează în variabilele din listă.
+                </p>
+                <h5>Exemplu</h5>
+                <pre>citeste a , b , c</pre>
+                <p>
+                    Citirea datelor este frecvent însoțită de precizări privind datele citite (tip, valori posibile.
+                    etc.).
+                </p>
+                <pre>citeste a , b , c (numere naturale)</pre>
+                <h4 id="l8">Afisarea</h4>
+                <p>
+                    Pentru afișarea datelor se folosește instrucțiunea <code>scrie &lt;listă expresii&gt;</code>, unde
+                    <code>&lt;listă expresii&gt;</code> reprezintă un șir de expresii separate prin caracterul
+                    <kbd>,</kbd>. Se evaluează în ordine expresiile din listă și se afisează pe ecran rezultatele lor.
+                </p>
+                <h5>Exemplu</h5>
+                <pre>scrie 'a + b = ' , a + b</pre>
+                <p>
+                    Dacă a = 3 și b = 4 se va afișa:
+                </p>
+                <div class="ps-result">a + b = 7</div>
+                <h4 id="l9">Atribuirea</h4>
+                Pentru atribuire se folosește instructiunea <code>&lt;variabilă&gt; ← &lt;expresie&gt;</code>. Se
+                evaluază expresia, iar valoarea obținută se memorează in variabilă.
+                <h5>Exemple</h5>
+                <pre>
+a ← 0
+S ← a + b
+i ← i + 1
+                </pre>
+                <h4 id="l10">Structura alternativă</h4>
+                <p>În pseudocod există instrucțiunea <code>daca</code>, cu următoarea sintaxă:</p>
+                <pre>
+┌ daca &lt;conditie&gt; atunci
+│    &lt;instructiuni1&gt;
+│ altfel
+│    &lt;instructiuni2&gt;
+└■</pre>
+                <p>
+                    sau
+                </p>
+                <pre>
+┌ daca &lt;conditie&gt; atunci
+│    &lt;instructiuni1&gt;
+└■</pre>
+                <p>
+                    Modul de execuție este următorul:
+                <ul>
+                    <li>se evaluează <code>&lt;conditie&gt;</code></li>
+                    <li>dacă este adevărată, se executa grupul de instrucțiuni <code>&lt;instructiuni1&gt;</code>, apoi
+                        se trece la următoarea instrucțiune</li>
+                    <li>dacă este falsă, se executa grupul de instrucțiuni <code>&lt;instructiuni2&gt;</code>, dacă
+                        există secțiunea <code>altfel</code>, apoi se trece la următoarea instrucțiune.</li>
+                </ul>
+                </p>
+                <h4 id="l11">Structuri repetitive</h4>
+                <p>Structura repetitivă cu număr cunoscut de pași</p>
+                <h5>Instructiunea pentru</h5>
+                <pre>
+┌ pentru &lt;variabila&gt; ← &lt;expresie initiala&gt;, &lt;expresie finala&gt; , &lt;pas&gt; executa
+│    &lt;instructiuni&gt;
+└■</pre>
+                <p>unde <code>expresie initiala</code>, <code>expresie finala</code> și <code>pas</code> sunt expresii
+                    cu rezultat (de regulă) întreg, iar <code>pas</code> poate fi <code>1</code> sau <code>-1</code> și
+                    poate lipsi, caz în care se consideră că este <code>1</code>.</p>
+                <p><code>variabila</code> primește pe rând valori crescătoare (dacă <code>pas = 1</code>) sau
+                    descrescătoare (dacă <code>pas = -1</code>) începând de la <code>expresie initiala</code> până la
+                    <code>expresie finala</code>, și pentru fiecare valoare se execută secvența
+                    <code>instructiuni</code>.
+                </p>
+                <h5>Exemplu</h5>
+                <p>Determinarea sumei și produsului primelor n numere naturale:</p>
+                <pre>
+S ← 0; P ← 1
+┌ pentru i←1,n executa
+│    S ← S + i
+│    P ← P * i
+└■
+scrie S, ' ' , P</pre>
+                <p>Structura repetitivă cu număr necunoscut de pasi și test inițial</p>
+                <h5>Instrucțiunea CÂT TIMP … EXECUTĂ</h5>
+                <p>Sintaxa</p>
+                <pre>
+┌ cat timp &lt;conditie&gt; executa
+│    &lt;instructiuni&gt;
+└■</pre>
+                <p>Mod de execuție
+                </p>
+                <ol>
+                    <li>se evalueză condiția</li>
+                    <li>dacă este adevărată se executa instrucțiunile și se revine la pasul 1</li>
+                    <li>dacă este falsă se trece la următoarea instrucțiune din algoritm</li>
+                </ol>
+                <p>Important: Dacă condiția este de la început falsă, instrucțiunile nu se vor executa deloc!</p>
+                <h5>Exemplu</h5>
+                <p>Determinarea sumei cifrelor unui număr natural:</p>
+                <pre>
+citeste n
+S ← 0
+┌ cat timp n ≠ 0 executa
+│    S ← S + n % 10
+│    n ← [n/10]
+└■
+scrie S</pre>
+                <p>Structura repetitivă cu număr necunoscut de pasi și test final</p>
+                <h5>Instrucțiunea REPETA … PANA CAND</h5>
+                <p>Sintaxa</p>
+                <pre>
+┌ repeta
+│    &lt;instructiuni&gt;
+└ pana cand &lt;conditie&gt;
+                </pre>
+                <p>Mod de execuție</p>
+                <ol>
+                    <li>se executa instrucțiunile</li>
+                    <li>se evalueză condiția</li>
+                    <li>dacă este falsă se revine la pasul 1</li>
+                    <li>dacă este adevărată se trece la următoarea instrucțiune din algoritm</li>
+                </ol>
+                <p>Important: Chiar dacă condiția este de la început adevărată, instrucțiunile s-au executat deja o
+                    dată!</p>
+                <h5>Exemplu</h5>
+                <p>Numărul cifrelor unui număr natural:</p>
+                <pre>
+citeste n
+cnt ← 0
+┌ repeta
+│    cnt ← cnt + 1
+│    n ← [n/10]
+└ pana cand n = 0
+scrie cnt</pre>
+                <h2 id="l12">Limbajul de programare C++</h2>
+                <p>
+                    Limbajul C++ a fost inventat de către Bjarne Stroustrup în 1979, ca o extindere a limbajului C.
+                    Limbajul C a fost inventat în 1969-1973 de către Dennis Ritchie pentru a realiza sistemul de operare
+                    Unix. Astfel, aproape toate programele scrise în C pot fi compilate în C++, eventual cu foarte
+                    puține modificări.
+                </p>
+                <p>Limbajul C++ este un limbaj compilat. Etapele scrierii unui program în C++ sunt:</p>
+                <ul>
+                    <li>editarea programului C++; se obține fișierul sursă, cu extensia <code>.cpp</code></li>
+                    <li>compilarea fișierului sursă; aici se verifică corectitudinea sintactică a programului
+                        (corectitudinea cuvintelor folosite, prezența semnelor de punctuație, etc.); dacă programul este
+                        corect sintactic, se va obține fișierul obiect, cu extensia <code>.o</code> sau
+                        <code>.obj</code>
+                    </li>
+                    <li>editarea de legături; se stabilesc legături între fișierul obiect curent și alte fișiere obiect,
+                        ale programatorului sau incluse în compilator; în urma acestei etape se obține programul
+                        executabil. În Windows, fișierele executabile au extensia <code>.exe</code>;</li>
+                    <li>programul executabil poate fi lansat în execuție (rulat).</li>
+                </ul>
+                <h2 id="l13">Primul program C++</h2>
+                <p>Cum scriem un program C++? Avem nevoie cel puțin de un editor de text pentru scrierea sursei și de un
+                    compilator C++. Deși fișierul sursă poate fi realizat cu orice editor de text, de cel mai multe ori
+                    folosim un IDE. Un IDE pentru C/C++ foarte utilizat este Code::Blocks. Acest articol prezintă modul
+                    de instalare a pachetului Code::Blocks pe calculator, împreună cu compilatorul MinGW, iar acest
+                    articol prezintă pașii necesari pentru a realiza un program C++ în Code::Blocks.</p>
+                <p>Să considerăm un prim program C++:</p>
+                <pre>
+// primul program C++
+#include &lt;iostream&gt;
+int main()
+{
+    /*
+      primul program C++
+      il scriem in Code::Blocks
+    */
+    std :: cout &lt;&lt; "Hello world";
+    return 0; 
+}</pre>
+                <p>Dacă vom compila și rula acest program, pe ecran va apărea:</p>
+                <kbd>Hello world</kbd>
+                <p>Să analizăm acest program. El este alcătuit din mai multe linii:</p>
+                <ol>
+                    <li><kbd>// primul program C++</kbd><br />Această linie reprezintă un comentariu. Comentariile sunt
+                        texte explicative care nu influențează comportamentul programului. Ele sunt pentru programatori,
+                        pentru a înțelege mai repede semnificația programului. Acest comentariu începe de la cele două
+                        caractere slash // și se termină la sfârșitul liniei.</li>
+                    <li><kbd>#include &lt;iostream&gt;</kbd><br />Liniile care încep cu # se numesc directive
+                        preprocesor. Ele sunt interpretate înainte de compilarea propriu-zisă, de către un program numit
+                        preprocesor. În cazul nostru, directiva #include cere preprocesorului să includă în sursă o
+                        secțiune a codului C++ standard, header-ul iostream, care permite realizarea operațiilor de
+                        citire și afișare &dash; la noi afișarea mesajului Hello world pe ecran.</li>
+                    <li><kbd>int main()</kbd><br />Această linie reprezintă declararea unei funcții. În esență, o
+                        functie este un grup de instructiuni care un un nume dat; în acest caz, funcția se numește main
+                        și este alcătuită din toate instrucțiunile care urmează. Vom discuta pe larg despre functii mai
+                        târziu.
+                        <br />Funcția numită main este specială în toate programele C++; această funcție este apelată
+                        când se lansează în execuție programul și trebuie să apară în orice program C++.
+                    </li>
+                    <li><kbd>{</kbd><br /> Parantezele acolade de la linia 4 și 10 delimitează instrucțiunile care fac
+                        parte din funcția main</li>
+                    <li>
+                        <pre>/*
+primul program C++
+il scriem in Code::Blocks
+*/</pre> Și acesta este un comentariu. Textele cuprinse între /* și */ nu influențează comportamentul programului.
+                        Ele pot să ocupe mai multe linii, sau pot să apară în interiorul unei linii.
+                    </li>
+                    <li><kbd>std :: cout &lt;&lt; “Hello world”;</kbd><br />Aceasta este o instrucțiune C++. O
+                        instrucțiune este o construcție (expresie, comandă) care face ceva. Instrucțiunile sunt “miezul”
+                        programelor, ele stabilind comportamentul acestora. Instrucțiunile dintr-un program se execută
+                        în ordine, una după alta.<br />
+                        Această instrucțiune produce afișarea pe ecran a atextului Hello world. Ea este alcătuită din
+                        trei părți. std::cout semnifică dispozitivul standard de ieșire (standard character output)
+                        &dash; de cele mai multe ori ecranul calculatorului. A doua parte este operatorul de inserție
+                        &lt;&lt;, care indică faptul că ceea ce urmează este inserat în std::cout (trimis spre ecran). A
+                        treia parte este textul, "Hello world", cuprins între ghilimele, care va fi inserat în
+                        std::cout. <br />
+                        Să observăm prezența caracterului ; la sfârșitul instrucțiunii. Orice instructiune C++ trebuie
+                        să se termine cu ;, la fel cum orice propoziție în limba română se termină cu caracterul .
+                        (punct).</li>
+                    <li><kbd>return 0;</kbd><br />Această instrucțiune marchează finalul execuției funcției main și a
+                        programului nostru. Valoarea 0 semnifica faptul că programul s-a încheiat cu succes!<br />Dacă
+                        în programul nostru ar fi fost și alte instrucțiuni după instrucțiunea return 0;, acestea nu
+                        s-ar mai fi executat.</li>
+                    <li><kbd>}</kbd>Acolada închisă } reprezintă finalul funcției main.</li>
+                </ol>
+                <p>Să reținem că nu toate liniile programului produc efecte la executarea programului. Unele linii
+                    (comentariile) sunt scrise numai pentru a ușura înțelegerea programului de către cel care îl
+                    citește/scrie. </p>
+                <h4 id="l14">Comentarii</h5>
+                    <p>Comentariile sunt texte care pot să apară în programul sursă și nu sunt luate în considerare la
+                        compilare. Ele sunt citite doar de către oameni, pentru a explica anumit secțiuni mai importante
+                        din
+                        program. Așa cum am văzut mai sus, în C++ sunt două tipuri de comentarii:</p>
+                    <ul>
+                        <li>// comentariu pe o linie</li>
+                        <li>/* comentariu de tip bloc */</li>
+                    </ul>
+                    <p>Comentariul pe o linie începe de caracterele // și se termină la finalul liniei. Comentariul de
+                        tip
+                        bloc începe la /*, se termină la */ și se poate întinde pe mai multe linii.</p>
+                    <h2>Echivalarea din pseudocod in C++</h2>
+                    <p>
+
+                    </p>
+                    <p>
+                        Diagrama urmatoare prezinta structurile din C++ care echivaleaza limbajul natural din pseudocod
+                        intr-un algoritm.
+                    </p>
+                    <div class="content-image unselectable">
+                        <img src="imagine1.png" style="width: 100%; max-width: 800px; height: auto;">
+                    </div>
+                    <p>
+                        In tabelul de mai sus aveti echivalarea fiecarei instructiuni din pseudocod in C++. De asemenea,
+                        in
+                        unele probleme vi se mai cere sa inlocuiti structurile repetitive. Trebuie sa retineti
+                        urmatoarele:
+                    <ul>
+                        <li>Structura repetitiva cu test initial: for, while</li>
+                        <li>Structura repetitiva cu test final: do while</li>
+                    </ul>
+                    </p>
+                    <h2 id="l15">Rezolvarea unei probleme</h2>
+                    <p>Se consideră algoritmul alăturat descris în pseudocod.</p>
+                    <pre>
+citeste n (numar natural nenul)
+s &lt;- 0
+┌pentru i &lt;- i, n executa
+│    a &lt;- 0
+│    b &lt;- 1
+│    j &lt;- 1
+│  ┌ cat timp j &lt; i executa
+│  │    r &lt;- 2 * b - a
+│  │    a &lt;- b
+│  │    b &lt;- r
+│  |    j &lt;- j + 1
+|  └■
+└■   s &lt;- s + b
+scrie s</pre>
+                    <p>
+                        a) Scrieti în pseudocod un algoritm, echivalent cu cel dat, care să contină o singură structură
+                        repetitivă.<br />
+                        b) Scrieti programul C/C++ corespunzător algoritmului dat.</p>
+                    <p>c)</p>
+                    <pre>
+citeste n (numar natural nenul)
+s <- 0
+┌pentru i <- i, n executa
+| s <- s + i
+└■
+ scrie s</pre>
+                    <p>d)</p>
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    unsigned int n, s, a, b, j, r;
+    cin &gt;&gt; n;
+    s = 0;
+    for(int i = 1; i &lt;= n; i++)
+    {
+        a = 0;
+        b = 1;
+        j = 1;
+        while(j &lt; i)
+        {
+            r = 2 * b - a;
+            a = b;
+            b = r;
+            j = j + 1;
+        }
+        s = s + b;
+    }
+    cout &lt;&lt; s;
+}</pre>
+            </div>
+        </div>
+        <!-- <div id="page-solves-prog" class="idpage noborder off">
+            <div class="card">
+                S-prog
+            </div>
+        </div>
+        <div id="page-solves-db" class="idpage noborder off">
+            <div class="card">
+                S-db
+            </div>
+        </div> -->
+        <div id="page-team" class="idpage noborder off">
+            <div class="card">
+                Atestat Rebeca Seria XII D
+
+                Profesor coordonator: Popescu Madalina
+            </div>
+        </div>
+    </div>
+    <div id="page-footer" class="card unselectable">
+        Proiect-Atestat Rebeca Seria XII D, Colegiul National "Mihail Kogalniceanu" Galati
+    </div>
+    <script>
+        function changePage(pagename) {
+            if (!document.getElementById('page-' + pagename)) return 'invalid';
+            let pages = document.getElementsByClassName('idpage');
+            for (let page of pages) {
+                page.classList.add("off")
+            };
+            (document.getElementById('page-' + pagename)).classList.remove('off');
+        }
+    </script>
+</body>
+
+</html>
